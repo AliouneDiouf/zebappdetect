@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html style= "font-size: 16px;" lang="fr"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Cell sorter and Immobilizer, ​Medical Solutions">
+    <meta name="description" content="">
+    <title>By ABDIOUF</title>
+    <link rel="stylesheet" href="/static/nicepage.css" media="screen">
+     <link rel="stylesheet" href="/static/accueil.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/static/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/static/nicepage.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/static/index.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/static/pie.js" defer=""></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+
+    <meta name="generator" content="Nicepage 5.1.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    <link rel="stylesheet" href="/lib/w3.css">
+
+    
+    
+    <script type="application/ld+json">
+    {
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "/static/default-logo.png"s
+
+    }</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="accueil">
+    <meta property="og:type" content="website">
+   
+
+  </head>
+  <body data-home-page="accueil.html" data-home-page-title="accueil" class="u-body u-xl-mode" data-lang="fr"> <header class="u-clearfix u-header u-header" id="sec-5e7d"> <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
+      <img src="/static/default-logo.png" class="u-logo-image u-logo-image-1">
+    </a>
+    <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+      <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+        <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+          <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+ </symbol>
+ </defs></svg>
+ </a>
+ </div>
+
+   <div class="u-custom-menu u-nav-container">
+    <style>
+        .input {
+            transition: box-shadow 0.3s, border-color 0.3s;
+          
+            &:focus {
+              box-shadow: 0 0 0 0.2rem rgba(88, 99, 248, 0.15);
+            }
+          }
+          
+    </style>
+
+        <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-grey-90 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base" href="/" style="padding: 10px 0px;">HOME</a>
+        </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-grey-90 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base" href= "{{ url_for('test')}}" style="padding: 10px 0px;"> DETECTION SYSTEM</a>
+        </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-grey-90 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base" href= "{{ url_for('about')}}"style="padding: 10px 0px;">QUESTIONNARY</a>
+        </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-grey-90 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base" href="{{ url_for('live')}}" style="padding: 10px 0px;">SORTING SYSTEM</a>
+        </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-grey-90 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base" href="{{ url_for('contact')}}" style="padding: 10px 0px;">CONTACT</a>
+      </div>
+
+        </li></ul>
+                  </div>
+                  <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                      <div class="u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/">HOME</a>
+         </li><li class="u-nav-item"><a href="{{ url_for('test')}}" class="u-button-style u-nav-link">DETECTION SYSTEM</a>
+         </li><li class="u-nav-item"><a href="{{ url_for('about')}}"class="u-button-style u-nav-link">QUESTIONNARY</a>
+         </li><li class="u-nav-item"><a href="{{ url_for('live')}}" class="u-button-style u-nav-link">SORTING SYSTEM</a>
+         </li><li class="u-nav-item"><a href="{{ url_for('contact')}}" class="u-button-style u-nav-link">CONTACT</a>
+        </li></ul>
+    </div>
+</div></header>
+<div class="formbold-main-wrapper">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="formbold-form-wrapper">
+      <form action="https://formbold.com/s/FORM_ID" method="POST">
+          <div class="formbold-input-flex">
+            <div>
+                <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Jane"
+                class="formbold-form-input"
+                />
+                <label for="firstname" class="u-custom-font u-font-roboto u-text u-text-6"> First name </label>
+            </div>
+            <div>
+                <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Cooper"
+                class="formbold-form-input"
+                />
+                <label for="lastname" class="u-custom-font u-font-roboto u-text u-text-6"> Last name </label>
+            </div>
+          </div>
+  
+          <div class="formbold-input-flex">
+            <div>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="jhon@mail.com"
+                class="formbold-form-input"
+                />
+                <label for="email" class="u-custom-font u-font-roboto u-text u-text-6"> Mail </label>
+            </div>
+            <div>
+                <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="(319) 555-0115"
+                class="formbold-form-input"
+                />
+                <label for="phone" class="u-custom-font u-font-roboto u-text u-text-6"> Phone </label>
+            </div>
+          </div>
+  
+          <div class="formbold-textarea">
+              <textarea
+                  rows="6"
+                  name="message"
+                  id="message"
+                  placeholder="Write your message..."
+                  class="formbold-form-input"
+              ></textarea>
+              <label for="message" class="u-custom-font u-font-roboto u-text u-text-6"> Message </label>
+          </div>
+  
+          <div class="formbold-input-file">
+            <div class="formbold-filename-wrapper">
+             
+            </div>
+            
+          </div>
+  
+          <button class="formbold-btn">
+              Send Message
+          </button>
+      </form>
+    </div>
+  </div>
+
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Inter", sans-serif;
+    }
+    .formbold-main-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px;
+    }
+  
+    .formbold-form-wrapper {
+      margin: 0 auto;
+      max-width: 550px;
+      width: 100%;
+      background: white;
+    }
+  
+    .formbold-input-flex {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 22px;
+    }
+    .formbold-input-flex > div {
+      width: 50%;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .formbold-textarea {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .formbold-form-input {
+      width: 100%;
+      padding-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid #DDE3EC;
+      background: #FFFFFF;
+      font-weight: 500;
+      font-size: 16px;
+      color: #07074D;
+      outline: none;
+      resize: none;
+    }
+    .formbold-form-input::placeholder {
+      color: #536387;
+    }
+    .formbold-form-input:focus {
+      border-color: #db545a;
+    }
+    .formbold-form-label {
+      color: #07074D;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      display: block;
+      margin-bottom: 18px;
+    }
+    .formbold-form-input:focus + .formbold-form-label {
+      color: #db545a;
+    }
+  
+    .formbold-input-file {
+      margin-top: 30px;
+    }
+    .formbold-input-file input[type="file"] {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      z-index: -1;
+    }
+    .formbold-input-file .formbold-input-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+    }
+  
+    .formbold-filename-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 22px;
+    }
+    .formbold-filename {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 24px;
+      color: #536387;
+    }
+    .formbold-filename svg {
+      cursor: pointer;
+    }
+  
+    .formbold-btn {
+      font-size: 16px;
+      border-radius: 5px;
+      padding: 12px 25px;
+      border: none;
+      font-weight: 500;
+      background-color: #db545a;
+      color: white;
+      cursor: pointer;
+      margin-top: 25px;
+    }
+    .formbold-btn:hover {
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    }
+  
+  </style>
+</body>
+
+</html>
+   

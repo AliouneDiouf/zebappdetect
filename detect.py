@@ -31,7 +31,6 @@ import threading
 import platform
 import sys
 from pathlib import Path
-import serial
 import time
 import torch
 
@@ -263,18 +262,6 @@ def run(
 
     #return a,b,d
 
-def operation( x ):
-    ss = serial.Serial(port="COM7", baudrate=115200)
-    if not ss.isOpen():
-        ss.open()
-    if (x==1):
-        ss.write(bytes([1]))
-        time.sleep(5)
-        #ss.close()
-    if (x==0):
-         ss.write(bytes([0]))
-         time.sleep(5)
-         #ss.close()
 
 
   

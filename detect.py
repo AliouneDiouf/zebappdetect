@@ -31,7 +31,6 @@ import threading
 import platform
 import sys
 from pathlib import Path
-import time
 import torch
 
 FILE = Path(__file__).resolve()

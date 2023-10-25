@@ -11,7 +11,6 @@ from importlib import import_module
 import cv2 
 import sys
 import numpy as np
-from flaskwebgui import FlaskUI
 
 
 
